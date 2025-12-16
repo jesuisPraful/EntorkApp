@@ -236,15 +236,12 @@ dotnet test BillWebServices.Tests
 
 - Application logging is configured in `appsettings.json`
 - Logs are written to console and file system
-- Consider implementing structured logging with Serilog
-- Recommended to integrate health checks for each service
+- Consider implementing structured logging.
 
 ## 🔐 Security Considerations
 
-- Implement JWT authentication in API Gateway
 - Use HTTPS for all communications
-- Secure connection strings using Azure Key Vault or similar
-- Implement rate limiting and throttling
+- Secure connection strings
 - Add input validation and sanitization
 
 ## 🤝 Contributing
@@ -257,11 +254,8 @@ dotnet test BillWebServices.Tests
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👥 Authors
-
-- Your Name - Initial work
+Praful Kumar
 
 ## 🙏 Acknowledgments
 
