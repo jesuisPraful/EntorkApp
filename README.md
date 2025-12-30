@@ -4,7 +4,7 @@
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 EntorkApp is designed using a **microservices architecture** consisting of **4 independent services**, each owning its own database.  
 An **API Gateway (Ocelot)** acts as a single entry point for routing client requests to the appropriate services.
@@ -15,7 +15,7 @@ An **API Gateway (Ocelot)** acts as a single entry point for routing client requ
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ### Core Services
 - **APIGateway** – Central API Gateway using Ocelot
@@ -41,7 +41,7 @@ Each service has a dedicated DAL project using **Entity Framework Core** and the
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Backend:** ASP.NET Core, C#
 - **API Gateway:** Ocelot
@@ -52,7 +52,7 @@ Each service has a dedicated DAL project using **Entity Framework Core** and the
 
 ---
 
-## ✨ Features
+## Features
 
 - 80+ RESTful APIs
 - Independent service deployment
@@ -63,7 +63,7 @@ Each service has a dedicated DAL project using **Entity Framework Core** and the
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - .NET 6.0+
@@ -148,7 +148,7 @@ cd EntorkApp
    dotnet run --urls="https://localhost:5000"
 ```
 
-## 📡 API Documentation
+## API Documentation
 
 All APIs are accessible through the API Gateway at `https://localhost:5000`
 
@@ -163,7 +163,7 @@ For detailed API documentation, access Swagger UI at:
 - API Gateway: `https://localhost:5000/swagger`
 - Individual Services: `https://localhost:500X/swagger`
 
-## 🗄️ Database Schema
+## Database Schema
 
 Each service maintains its own database following the Database-per-Service pattern:
 
@@ -204,7 +204,7 @@ BillDAL/
 - Centralizes data access logic
 - Enables easier switching of data sources
 
-## 🔧 Configuration
+## Configuration
 
 ### API Gateway (Ocelot)
 
@@ -223,7 +223,7 @@ Each service has its own `appsettings.json` with:
 - CORS policies
 - Authentication settings
 
-## 🧪 Testing
+## Testing
 ```bash
 # Run all tests
 dotnet test
@@ -232,19 +232,19 @@ dotnet test
 dotnet test BillWebServices.Tests
 ```
 
-## 📈 Monitoring & Logging
+## Monitoring & Logging
 
 - Application logging is configured in `appsettings.json`
 - Logs are written to console and file system
 - Consider implementing structured logging.
 
-## 🔐 Security Considerations
+## Security Considerations
 
 - Use HTTPS for all communications
 - Secure connection strings
 - Add input validation and sanitization
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -252,12 +252,12 @@ dotnet test BillWebServices.Tests
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
-## 👥 Authors
+## Authors
 Praful Kumar
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - ASP.NET Core team for the excellent framework
 - Ocelot community for the API Gateway library
